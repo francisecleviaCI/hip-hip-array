@@ -121,8 +121,10 @@ for (let i = 3; i <students.length; i++){
 
 challengeBanner()
 console.log(challengeBanner(10))
-// Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually.
-
+// Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually.//** */
+for (let i = 3; i <students.length; i++){
+  console.log(students[i])
+}
 
 challengeBanner()
 console.log(challengeBanner(11))
@@ -137,20 +139,35 @@ challengeBanner()
 console.log(challengeBanner(12))
 // Pull the items at the 4th-6th indices (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
 const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
-
+dinosaurs.splice(4, 3);
+for (let i = 0; i <dinosaurs.length; i++){
+  console.log(dinosaurs[i])
+}
 
 challengeBanner()
 console.log(challengeBanner(13))
-// Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.
-
+// Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.//*** */
+const dinosaurs2 = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
+dinosaurs2.join("*");
+for (let i = 0; i <dinosaurs2.length; i++){
+  console.log(dinosaurs2[i])
+}
 
 challengeBanner()
 console.log(challengeBanner(14))
 // Use .reverse to reverse the dinosaur array and then log out the original array. .reverse DOES change the original array.
-
+const dinosaurs1= ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
+dinosaurs1.reverse();
+for (let i = 0; i <dinosaurs1.length; i++){
+  console.log(dinosaurs1[i])
+}
 
 challengeBanner()
 console.log(challengeBanner(15))
 // Use .concat to combine the following two arrays into a NEW array you make. Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.
 const primaries = ['red', 'yellow', 'blue'];
 const secondaries = ['orange', 'green', 'purple'];
+let elections = primaries.concat(secondaries);
+for (let i = 0; i <elections.length; i++){
+  console.log(elections[i])
+}
