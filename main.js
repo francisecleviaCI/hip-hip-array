@@ -113,8 +113,9 @@ for (let i = 0; i < emptyarray.length; i++){
 
 challengeBanner()
 console.log(challengeBanner(9))
-// Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually. ****How do I stop at index 10??
+// Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
 for (let i = 3; i <students.length; i++){
+  if (i <= 10)
   console.log(students[i])
 }
 
@@ -122,8 +123,10 @@ for (let i = 3; i <students.length; i++){
 challengeBanner()
 console.log(challengeBanner(10))
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually.//** */
-for (let i = 3; i <students.length; i++){
-  console.log(students[i])
+const studentsCopy = students
+for (let i = 3; i <studentsCopy.length; i++){
+  if (i <= 10)
+  console.log(studentsCopy[i])
 }
 
 challengeBanner()
